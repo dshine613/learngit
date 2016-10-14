@@ -1,0 +1,34 @@
+/************************************************************************
+ *
+ *  Copyright (C), 2016-2016, FuJiKam Co., Ltd. All rights reserved. 
+ *
+ ************************************************************************
+ *  File Name     : git_command.txt
+ *  Version       : v1.0
+ *  Created Time  : 2016/10/14 14:01
+ *  Last Modified : 2016/10/14 14:01
+ *  Description   : 
+ *
+ *  Author        : dingzhipeng  ID:1571
+ *  Mail          : dingzhipeng_613@163.com
+ *
+ *  History       : 
+ *
+ ************************************************************************
+ */
+
+git init                        //初始化一个git仓库
+git add readme.txt              //添加文件到暂存区
+git commit -m "xxxxxxxxx"       //提交版本  
+
+git status                      //获取工作目录的状态
+git log                         //显示日志 
+git log --pretty=oneline        //每个版本显示1行日志    
+git diff readme.txt             //查看两个版本的差异
+git reset --hard HEAD^          //回退到上一个版本
+
+git reset --hard ca93dd8        //回退到id以ca93dd8开头的版本
+git reflog                      //查看命令记录
+
+git checkout -- readme.txt      //丢弃工作区的修改
+git reset HEAD readme.txt       //将暂存区的修改撤销到工作区  
